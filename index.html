@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommensteuerrechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b1c75d67e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <form action="#">
+            <h1>Einkommensteuerrechner</h1>
+            <article>
+                <label for="year">Jahr</label>
+                <select name="year" id="year">
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+            </article>
+            <article>
+                <label for="rel-status">Art der Veranlagung:</label>
+                <select name="rel-status" id="rel-status" onchange="showBox()">
+                    <option id="single" value="single">Einzelveranlagung</option>
+                    <option id="married" value="married">Zusammenveranlagung</option>
+                </select>
+            </article>
+            <article>
+                <div id="box1">
+                    <p>Zu versteuerndes Einkommen</p>
+                    <div class="container">
+                        <i class="fas fa-euro-sign"></i>
+                        <input type="number" name="zve1" id="zve1" placeholder="Person 1">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                </div>
+                <div id="box2">
+                    <p>Zu versteuerndes Einkommen</p>
+                    <div class="container">
+                        <i class="fas fa-euro-sign"></i>
+                        <input type="number" name="zve2" id="zve2" placeholder="Person 2">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                </div>
+            </article>
+            <input id="btn" type="button" value="CALCULATE" onclick="calculate()">
+            <h1 id="income-tax"></h1>
+        </form>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

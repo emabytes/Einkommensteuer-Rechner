@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form {
+  min-height: 70vh;
+  min-width: 30%;
+  color: black;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.4);
+  font-family: "Lato", sans-serif;
+}
+form h1 {
+  padding: 4vh 0;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+article {
+  padding-bottom: 2vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#box2 {
+  display: none;
+}
+#box1,
+box2 {
+  width: 100%;
+}
+#box2 input {
+  margin: 0 auto;
+  margin-bottom: 3vh;
+}
+#box1 input {
+  margin: 0 auto;
+  margin-bottom: 3vh;
+}
+#year {
+  width: 30%;
+}
+input,
+select {
+  width: 90%;
+  display: block;
+  text-align: center;
+  outline: none;
+  border: none;
+  background: rgba(43, 70, 107, 0.1);
+  padding: 7px 1%;
+  font-size: 1em;
+  color: rgb(49, 49, 49);
+  border-radius: 3px;
+  margin-bottom: 3vh;
+  font-family: "Lato", sans-serif;
+}
+p,
+label {
+  padding-bottom: 3px;
+}
+option {
+  width: 30%;
+}
+#btn {
+  width: 35%;
+  display: block;
+  padding: 8px;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  border: 2px solid rgb(49, 49, 49);
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 1vh;
+  background: rgb(49, 49, 49);
+  color: white;
+}
+#btn:hover {
+  background: white;
+  color: rgb(49, 49, 49);
+}
+#btn:focus {
+  outline: none;
+}
+#income-tax {
+  font-size: 1em;
+}
+::placeholder {
+  color: rgba(49, 49, 49, 0.4);
+}
+i {
+  padding: 3px;
+  font-size: 0.9em;
+}
+.container {
+  display: flex;
+  align-items: baseline;
+}
